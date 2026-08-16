@@ -1,0 +1,456 @@
+/* Remove default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f6f3;
+  color: #222;
+}
+
+/* =========================
+   NAVIGATION BAR
+   ========================= */
+
+header {
+  background: white;
+  border-bottom: 2px solid #ddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 7%;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo text effect */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #e85d75;
+}
+
+/* Navigation links */
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+
+  /* Text effect */
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e85d75;
+}
+
+/* Cart */
+.cart {
+  font-weight: bold;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+  min-height: 500px;
+
+  /* Background */
+  background: linear-gradient(120deg, #f7d9df, #f9eee8);
+
+  display: flex;
+  align-items: center;
+
+  padding: 60px 8%;
+
+  overflow: hidden;
+}
+
+/* Hero text */
+.hero-content {
+  max-width: 600px;
+
+  /* CSS animation */
+  animation: slideIn 1.2s ease;
+}
+
+.small-title {
+  color: #e85d75;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+/* Large heading */
+.hero h1 {
+  font-size: 55px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+
+  /* Text effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero h1 span {
+  color: #e85d75;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+button {
+  background: #222;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 12px 25px;
+
+  margin-top: 20px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e85d75;
+
+  /* Animation effect */
+  transform: scale(1.05);
+}
+
+/* =========================
+   CATEGORY SECTION
+   ========================= */
+
+.categories,
+.products {
+  padding: 60px 7%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+/* Multiple column layout */
+.category-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+/* Category cards */
+.category-card {
+  background: white;
+
+  padding: 25px;
+
+  text-align: center;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Category icons */
+.category-icon {
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.category-card h3 {
+  margin-bottom: 8px;
+}
+
+.category-card p {
+  color: #666;
+}
+
+/* =========================
+   PRODUCT SECTION
+   ========================= */
+
+.products {
+  background: white;
+}
+
+/* Four column product layout */
+.product-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+/* Product card */
+.product-card {
+  background: #f9f9f9;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image area */
+.product-image {
+  height: 180px;
+
+  background: #f0e5e7;
+
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 90px;
+
+  margin-bottom: 15px;
+
+  /* Border */
+  border: 2px solid #eee;
+}
+
+.product-card h3 {
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.product-card strong {
+  display: block;
+  font-size: 20px;
+  color: #e85d75;
+}
+
+/* =========================
+   OFFER SECTION
+   ========================= */
+
+.offer {
+  margin: 60px 7%;
+
+  padding: 60px;
+
+  text-align: center;
+
+  /* Background and border */
+  background: #222;
+
+  color: white;
+
+  border: 3px solid #e85d75;
+
+  border-radius: 15px;
+
+  /* Animation */
+  animation: pulse 3s infinite;
+}
+
+.offer p:first-child {
+  color: #e85d75;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+}
+
+.offer h2 {
+  font-size: 50px;
+  margin: 15px 0;
+}
+
+/* =========================
+   FEATURES
+   ========================= */
+
+.features {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  padding: 50px 7%;
+
+  background: #f1ece8;
+}
+
+.feature {
+  text-align: center;
+
+  padding: 20px;
+}
+
+.feature span {
+  font-size: 40px;
+}
+
+.feature h3 {
+  margin: 10px 0;
+}
+
+.feature p {
+  color: #666;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  background: #222;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 35px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: bold;
+
+  color: #e85d75;
+
+  margin-bottom: 10px;
+}
+
+/* =========================
+   CSS ANIMATIONS
+   ========================= */
+
+/* Hero entrance animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Offer animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .category-container,
+  .product-container,
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .category-container,
+  .product-container,
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 400px;
+    padding: 40px 6%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .offer {
+    margin: 30px 5%;
+    padding: 35px 15px;
+  }
+
+  .offer h2 {
+    font-size: 36px;
+  }
+}
